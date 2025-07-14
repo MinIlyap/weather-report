@@ -49,7 +49,7 @@ public class WeatherProducer {
     public void produceWeatherData() {
         try {
             // Генерируем данные за неделю
-            LocalDate startDate = LocalDate.now().minusDays(6);
+            LocalDate startDate = LocalDate.now();
             for (int i = 0; i < 7; i++) {
                 LocalDate eventDate = startDate.plusDays(i);
                 for (String city : cities) {
